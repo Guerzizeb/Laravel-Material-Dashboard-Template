@@ -39,11 +39,10 @@
 		</div>
 		<div class="footer text-center">
 			<button type="submit" class="btn btn-primary btn-round">Login</button>
-
+			<br>
 			Don't have an accout ? 
-			<a href="{{ route('register') }}" class="btn btn-sm btn-info">Create un account</a>
-
-			<a class="btn" href="{{ route('password.request') }}">
+			<a href="{{ route('register') }}" class="btn btn-sm btn-info btn-simple">Create un account</a>
+			<a class="btn btn-simple btn-danger" href="{{ route('password.request') }}">
                 Forgot Your Password?
             </a>
 		</div>

@@ -68,8 +68,9 @@
 		</div>
 		<div class="footer text-center">
 			<button type="submit" class="btn btn-primary btn-round">Submit</button>
+			<br>
 			Have already an accout ? 
-			<a href="{{ route('login') }}" class="btn btn-info btn-sm">Log In</a>
+			<a href="{{ route('login') }}" class="btn btn-info btn-simple">Log In</a>
 		</div>
 	</form>
 </div>

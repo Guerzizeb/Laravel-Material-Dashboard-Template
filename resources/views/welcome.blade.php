@@ -84,10 +84,10 @@
         <span class="icon-bar bar2"></span>
         <span class="icon-bar bar3"></span>
       </button>
-      <a href="http://www.creative-tim.com">
+      <a href="{{ url('/') }}">
            <div class="logo-container">
                 <div class="logo">
-                    <img src="{{ asset('img/new_logo.png') }}" alt="Creative Tim Logo">
+                    <img src="{{ asset('img/new_logo.png') }}" alt="{{ config('app.name', 'Laravel') }}">
                 </div>
                 <div class="brand">
                     {{ config('app.name', 'Laravel') }}
@@ -100,20 +100,20 @@
     <div class="collapse navbar-collapse">
 		<ul  class="nav navbar-nav navbar-right">
 			<li>
-		                <a href="https://twitter.com/CreativeTim" target="_blank" class="btn btn-simple btn-white btn-just-icon">
-							<i class="fa fa-twitter"></i>
-						</a>
-		            </li>
-		            <li>
-		                <a href="https://www.facebook.com/CreativeTim" target="_blank" class="btn btn-simple btn-white btn-just-icon">
-							<i class="fa fa-facebook-square"></i>
-						</a>
-		            </li>
-					<li>
-		                <a href="https://www.instagram.com/CreativeTimOfficial" target="_blank" class="btn btn-simple btn-white btn-just-icon">
-							<i class="fa fa-instagram"></i>
-						</a>
-		            </li>
+				<a href="https://twitter.com/#" target="_blank" class="btn btn-simple btn-white btn-just-icon">
+					<i class="fa fa-twitter"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://www.facebook.com/#" target="_blank" class="btn btn-simple btn-white btn-just-icon">
+					<i class="fa fa-facebook-square"></i>
+				</a>
+			</li>
+			<li>
+			<a href="https://www.instagram.com/#" target="_blank" class="btn btn-simple btn-white btn-just-icon">
+					<i class="fa fa-instagram"></i>
+				</a>
+			</li>
             @if (Auth::guest())
                     <li><a href="{{ route('login') }}">Login</a></li>
                     <li><a href="{{ route('register') }}">Register</a></li>
