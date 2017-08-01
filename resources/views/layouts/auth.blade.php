@@ -22,7 +22,7 @@
 
     <style type="text/css">
     	.wallpaper {
-    		background-image: url("{{ asset('img/city.jpg') }}"); 
+    		background-image: url("{{ asset('img/cover.jpeg') }}"); 
     		background-size: cover; 
     		background-position: top center;
     	}

@@ -68,9 +68,9 @@
 		</div>
 		<div class="footer text-center">
 			<button type="submit" class="btn btn-primary btn-round">Submit</button>
-			<br>
-			Have already an accout ? 
-			<a href="{{ route('login') }}" class="btn btn-info btn-simple">Log In</a>
+			<hr>
+			<a href="{{ url('/') }}" class="btn btn-info btn-simple">Home</a>
+			Already have an account? <a href="{{ route('login') }}" class="btn btn-info btn-simple">Login</a>
 		</div>
 	</form>
 </div>

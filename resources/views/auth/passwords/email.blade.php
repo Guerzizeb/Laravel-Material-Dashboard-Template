@@ -1,12 +1,12 @@
 @extends('layouts.auth')
 
-@section('page-title', 'Register a new account')
+@section('page-title', 'Reset Password')
 
 @section('content')
 
 <div class="card card-signup">
 
-	<form class="form-horizontal" method="POST" action="{{ route('password.email') }}">
+	<form method="POST" action="{{ route('password.email') }}">
 		{{ csrf_field() }}
 
 		<div class="header header-primary text-center">
