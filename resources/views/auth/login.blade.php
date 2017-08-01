@@ -34,13 +34,18 @@
 					<input type="checkbox" name="optionsCheckboxes">
 					Remember me
 				</label>
+				
 			</div> 
 		</div>
 		<div class="footer text-center">
-			<button type="submit" class="btn btn-simple btn-primary btn-lg">Login</button>
+			<button type="submit" class="btn btn-primary btn-round">Login</button>
 
 			Don't have an accout ? 
-			<a href="{{ route('register') }}" class="btn btn-simple btn-primary btn-lg">Create un account</a>
+			<a href="{{ route('register') }}" class="btn btn-sm btn-info">Create un account</a>
+
+			<a class="btn" href="{{ route('password.request') }}">
+                Forgot Your Password?
+            </a>
 		</div>
 	</form>
 </div>

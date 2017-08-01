@@ -47,7 +47,7 @@
 					<span class="input-group-addon">
 						<i class="material-icons">lock_outline</i>
 					</span>
-					<input type="password" placeholder="Password..."  class="form-control" value="{{ old('password') }}" required/>
+					<input type="password" placeholder="Password..." name="password"  class="form-control" value="{{ old('password') }}" required/>
 					@if ($errors->has('password'))
 					<span class="help-block">
                     	<strong>{{ $errors->first('password') }}</strong>
@@ -67,9 +67,9 @@
 
 		</div>
 		<div class="footer text-center">
-			<button type="submit" href="#pablo" class="btn btn-simple btn-primary btn-lg">Submit</button>
+			<button type="submit" class="btn btn-primary btn-round">Submit</button>
 			Have already an accout ? 
-			<a href="{{ route('login') }}" class="btn btn-simple btn-primary btn-lg">Log In</a>
+			<a href="{{ route('login') }}" class="btn btn-info btn-sm">Log In</a>
 		</div>
 	</form>
 </div>
