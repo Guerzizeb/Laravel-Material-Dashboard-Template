@@ -15,7 +15,7 @@
             <h4>Reset Password</h4>
         </div>
 
-        <p class="text-divider">Please type your new password</p>
+        <p class="text-divider">Please type your email and the new password</p>
         <div class="content">
 
             <div class="input-group">
@@ -35,7 +35,7 @@
                     <span class="input-group-addon">
                         <i class="material-icons">lock_outline</i>
                     </span>
-                    <input type="password" placeholder="Password..." name="password"  class="form-control" value="{{ old('password') }}" required/>
+                    <input type="password" id="password" placeholder="Password..." name="password"  class="form-control" value="{{ old('password') }}" required/>
                     @if ($errors->has('password'))
                     <span class="help-block">
                         <strong>{{ $errors->first('password') }}</strong>

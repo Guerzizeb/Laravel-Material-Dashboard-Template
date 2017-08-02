@@ -98,22 +98,8 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse">
+
 		<ul  class="nav navbar-nav navbar-right">
-			<li>
-				<a href="https://twitter.com/#" target="_blank" class="btn btn-simple btn-white btn-just-icon">
-					<i class="fa fa-twitter"></i>
-				</a>
-			</li>
-			<li>
-				<a href="https://www.facebook.com/#" target="_blank" class="btn btn-simple btn-white btn-just-icon">
-					<i class="fa fa-facebook-square"></i>
-				</a>
-			</li>
-			<li>
-			<a href="https://www.instagram.com/#" target="_blank" class="btn btn-simple btn-white btn-just-icon">
-					<i class="fa fa-instagram"></i>
-				</a>
-			</li>
             @if (Auth::guest())
                     <li><a href="{{ route('login') }}">Login</a></li>
                     <li><a href="{{ route('register') }}">Register</a></li>
@@ -139,8 +125,26 @@
                 </ul>
             </li>
             @endif
-
     	</ul>
+
+    	<ul  class="nav navbar-nav navbar-right">
+			<li>
+				<a href="https://twitter.com/#" target="_blank" class="btn btn-simple btn-white btn-just-icon">
+					<i class="fa fa-twitter"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://www.facebook.com/#" target="_blank" class="btn btn-simple btn-white btn-just-icon">
+					<i class="fa fa-facebook-square"></i>
+				</a>
+			</li>
+			<li>
+			<a href="https://www.instagram.com/#" target="_blank" class="btn btn-simple btn-white btn-just-icon">
+					<i class="fa fa-instagram"></i>
+				</a>
+			</li>
+		</ul>
+
 
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
