@@ -118,9 +118,9 @@
                             Logout
                         </a>
 
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                            {{ csrf_field() }}
-                        </form>
+                        {{ Form::open(['route' => 'logout', 'id' => 'logout-form', 'style' => 'display: none;'])}}
+                        	{{ Form::token()}}
+                        {{ Form::close() }}
                     </li>
                 </ul>
             </li>
@@ -300,27 +300,7 @@
 	<!--  Notifications Plugin    -->
 	<script src="{{ asset('js/bootstrap-notify.js') }}"></script>
 
-	<!--  Google Maps Plugin    -->
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
-
 	<!-- Material Dashboard javascript methods -->
 	<script src="{{ asset('js/material-dashboard.js') }}"></script>
-
-	<!-- Material Dashboard DEMO methods, don't include it in your project! -->
-	<script src="{{ asset('js/demo.js') }}"></script>
-
-    <script>
-        var header_height;
-        var fixed_section;
-        var floating = false;
-
-        $().ready(function(){
-            suggestions_distance = $("#suggestions").offset();
-            pay_height = $('.fixed-section').outerHeight();
-
-			$(window).on('scroll', md.checkScrollForTransparentNavbar);
-			demo.initDocumentationCharts();
-        });
-    </script>
 
 </html>

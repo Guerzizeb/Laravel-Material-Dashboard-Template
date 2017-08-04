@@ -1,5 +1,9 @@
 @extends('layouts.base')
 
+@section('title', 'Dashboard')
+
+@section('page-title', 'Dashboard')
+
 @section('content')
 
 <div class="content">

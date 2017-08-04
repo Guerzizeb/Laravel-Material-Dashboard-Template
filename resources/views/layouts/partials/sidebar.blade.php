@@ -13,7 +13,7 @@
 
     <div class="sidebar-wrapper">
         <ul class="nav">
-            <li class="active">
+            <li class="{{ isActiveRoute('home') }}">
                 <a href="#">
                     <i class="material-icons">dashboard</i>
                     <p>Dashboard</p>
